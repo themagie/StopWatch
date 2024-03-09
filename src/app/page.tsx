@@ -1,11 +1,11 @@
 import Image from "next/image";
-import App from '../Components/watch'
+import Watch from '../Components/watch'
 export default function Home() {
   return (
-    <main className="">
-     <App/>
+    <div className="">
+     <Watch/>
   
 
-    </main>
+    </div>
   );
 }
