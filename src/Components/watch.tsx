@@ -44,7 +44,7 @@ function App () {
 
   return (
     <>
-      <div className=' min-h-[100vh] text-black max-w-[400px] m-5 rounded-md'>
+      <div className=' min-h-[100vh] text-gray-800 max-w-[400px] m-5 rounded-md'>
         <div className='py-8 text-4xl'>{(time / 1000).toFixed(2)} s</div>
         <div className='flex flex-row'>
           <div className='flex-1'>
@@ -58,7 +58,7 @@ function App () {
           <div className='flex-1'>
             <button
               onClick={handleStartStop}
-              className='w-5/6 rounded bg-indigo-500 py-4 text-white hover:bg-indigo-600'
+              className='w-5/6 rounded bg-indigo-400 py-4 text-white hover:bg-indigo-600'
             >
               {isRunning ? 'Stop' : 'Start'}
             </button>
