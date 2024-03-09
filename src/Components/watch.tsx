@@ -1,7 +1,7 @@
 'use client'
 import { useState } from 'react'
 
-function App () {
+function Watch() {
   const [time, setTime] = useState<number>(0)
   const [lapTime, setLapTime] = useState<number[]>([])
   const [timerId, setTimerId] = useState<NodeJS.Timeout | null>(null)
@@ -43,8 +43,8 @@ function App () {
   })
 
   return (
-    <>
-      <div className=' min-h-[100vh] text-gray-800 max-w-[400px] m-5 rounded-md'>
+    <div className=' flex items-center justify-center min-h-[100vh] '>
+      <div className='w-[360px] max-h-[100vh] rounded-md p-3 m-3 my-10 bg-gradient-to-bl from-slate-800 to-slate-900 text-white shadow-xl shadow-slate-950'>
         <div className='py-8 text-4xl'>{(time / 1000).toFixed(2)} s</div>
         <div className='flex flex-row'>
           <div className='flex-1'>
@@ -77,8 +77,8 @@ function App () {
           <div className='h-80 overflow-y-auto'>{lap}</div>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
-export default App
+export default Watch
