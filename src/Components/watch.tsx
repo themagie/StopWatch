@@ -67,7 +67,7 @@ function Watch() {
             <button
               onClick={handleLap}
               disabled={isRunning ? false : true}
-              className='w-5/6 rounded border border-slate-300 bg-gray-800 py-4 text-white hover:bg-gray-900 disabled:bg-transparent disabled:text-black'
+              className='w-5/6 rounded border border-slate-300 bg-gray-800 py-4 text-white hover:bg-gray-900 disabled:bg-transparent disabled:hidden'
             >
               Lap
             </button>
